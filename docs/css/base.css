@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'permanentMarker';
+    src: url('../fonts/PermanentMarker-Regular.ttf') format('truetype');
+  }
+
+@font-face {
+    font-family: 'haleluya';
+    src: url('../fonts/GloriaHallelujah-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'architect';
+    src: url('../fonts/ArchitectsDaughter-Regular.ttf') format('truetype');
+}
+
+.promptContainer {
+    background-color: #fff;
+    padding: 25px 10px;
+    padding-left: 30px;
+    border: 2px dashed #9B03B6;
+    border-radius: 20px;
+}
+
+.contextColor {
+    color: #4F9400;
+    font-size: 2.1em;
+    font-family: 'Courier New', Courier, monospace;
+}
+.modifierColor {
+    color: #B5CD00;
+    font-size: 2.1em;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.orderColor {
+    color: #E20057;
+    font-size: 2.7em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.contextColorSM {
+    color: #4F9400;
+    font-size: 1.7em;
+    font-family: 'Courier New', Courier, monospace;
+}
+.modifierColorSM {
+    color: #B5CD00;
+    font-size: 1.7em;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.orderColorSM {
+    color: #E20057;
+    font-size: 2.1em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.remarkText:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+.copyTextBtn {
+    font-size: 2.5em;
+    padding: 10px;
+    color: #9B03B6;
+    font-style: bold;
+    text-transform: uppercase;
+    font-family: 'permanentMarker', sans-serif;
+}
+
+h1 {
+    color: #9B03B6;
+    font-size: 4.2em;
+    font-family: 'haleluya', arial;
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+}
+
+li {
+    font-size: 1.3em;
+}
+
+.verticalCarrouselContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.imgCarrousel {
+    margin: 7px;
+    width: 200px;
+}
+
+.ftContainer {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid grey;
+    padding-bottom: 3px;
+}
+
+.icoauthor {
+    width: 40px;
+    border-radius: 10%;
+    margin-right: 10px;
+}
+
+.ftBrand {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+.ftLink {
+    color: #9B03B6;
+    font-size: 0.7em;
+    font-variant: small-caps;
+}
+
+.ftSpaced {
+    padding: 2px 7px;
+}

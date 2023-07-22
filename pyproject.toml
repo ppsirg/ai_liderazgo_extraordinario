@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "presentacion-ai-prompts"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "presentacion_ai_prompts"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+hovercraft = "^2.7"
+qrcode = "^7.4.2"
+yt-dlp = "^2023.7.6"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

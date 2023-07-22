@@ -1,0 +1,167 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head><title>Usando AI para tus metas</title><meta charset="UTF-8"></meta><meta name="generator" content="Hovercraft! 1.0 http://regebro.github.com/hovercraft"></meta><link rel="stylesheet" href="css/hovercraft.css" media="all"></link><link rel="stylesheet" href="css/highlight.css" media="all"></link><link rel="stylesheet" href="css/base.css" media="screen,projection"></link><script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        showProcessingMessages: false,
+        messageStyle: "none",
+        TeX : { extensions : ['color.js'] }
+      });
+    </script></head><body class="impress-not-supported"><div id="impress-help"></div><div id="impress"><div class="step step-level-1" step="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1" data-x="0" data-y="0" data-z="0"><h1 id="usando-ai-para-tus-metas">Usando AI para tus metas</h1><div class="notes"><p>preguntar que piensan que es inteligencia artificial, decirle a la gente que
+les puedo explicar la inteligencia artificial con una cancion de guayacan</p></div></div><div class="step step-level-1" step="1" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1" data-x="1600" data-y="0" data-z="0"><h1 id="que-es-la-ai">Que es la AI</h1><img src="img/guayacan.webp" width="600px"></img><p>"CUANDO HABLAN LAS MIRADAS"</p><audio controls ><source src='audio/ai_guayacan.mp3' type="audio/mp3" ></audio><div class="notes"><p>una ia es esencialmente dos maquinas, una que genera contenido para hacerlo pasar
+por correcto y otra que juzga si un contenido es correcto, cuando la primera
+enga&#xF1;a a la segunda se obtiene lo que se desea que haga la AI</p></div></div><div class="step step-level-1" step="2" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1" data-x="3200" data-y="0" data-z="0"><h1 id="que-es-la-ai-1">Que es la AI</h1><p>"CUANDO HABLAN LAS MIRADAS"</p><audio controls ><source src='audio/ai_guayacan.mp3' type="audio/mp3" ></audio><h2 id="contexto-la-situacion">Contexto (la situacion)</h2><p class="promptContainer">
+<span class="contextColorSM remarkText">
+tomame de la mano dulcemente,
+acercate a mi, yo quiero hablarte de amor
+</span>
+</p><h2 id="orden-lo-que-quiero-que-hagas">Orden (lo que quiero que hagas)</h2><p class="promptContainer">
+<span class="orderColorSM remarkText">
+dime aunque sea mentiras que me amas, por favor,
+</span>
+</p><h2 id="modificador-cosas-que-pueden-cambiar-como-se-responde-a-la-orden">Modificador (cosas que pueden cambiar como se responde a la orden)</h2><p class="promptContainer">
+<span class="modifierColorSM remarkText">
+quiero apoyarte contra mi pecho, aunque quizas no llegue a tu lecho
+</span>
+</p></div><div class="step step-level-1" step="3" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1" data-x="4800" data-y="0" data-z="0"><h1 id="que-cosas-puede-hacer-una-ia">Que cosas puede hacer una IA</h1><ul><li>clasificar</li><li>predecir</li></ul><p><a href="https://theresanaiforthat.com/">There is an AI for that</a></p><img src="qr/ai_for_that.webp"></img></div><div class="step step-level-1" step="4" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1" data-x="6400" data-y="0" data-z="0"><h1 id="usemos-nuestra-primera-ai">Usemos nuestra primera AI</h1><p><a href="https://chat.forefront.ai/">Forefront.ai</a></p><img src="qr/forefront_ai.webp"></img></div><div class="step step-level-1" step="5" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1" data-x="8000" data-y="0" data-z="0"><h1 id="que-es-un-prompt">Que es un prompt</h1><p class="promptContainer"><span class="contextColor remarkText">actuando como un veterinario experto en gatos
+peque&#241;os de pelo largo,</span> <span class="orderColor remarkText">escribe una lista de
+consejos para cuidar a un gato angora turco de dos a&#241;os con sobrepeso,</span>
+<span class="modifierColor remarkText">centrese en los consejos de dieta y ejercicio</span></p><button id="promptcopyButtonA" class="copyTextBtn">Copiar texto</button>
+<script>
+    document.getElementById("promptcopyButtonA").addEventListener("click", function() {
+    var textToCopy = "actuando como un veterinario experto en gatos peque\u00f1os de pelo largo, escribe una lista de consejos para cuidar a un gato angora turco de dos a\u00f1os con sobrepeso, centrese en los consejos de dieta y ejercicio";
+
+    // Create a temporary input element
+    var tempInput = document.createElement("input");
+    tempInput.value = textToCopy;
+    document.body.appendChild(tempInput);
+
+    // Copy the text from the input element
+    tempInput.select();
+    document.execCommand("copy");
+
+    // Remove the temporary input element
+    document.body.removeChild(tempInput);
+
+    // Alert the user that the text has been copied
+    alert("Texto copiado: ");
+    });
+</script></div><div class="step step-level-1" step="6" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1" data-x="9600" data-y="0" data-z="0"><h1 id="trucos-contexto">Trucos - contexto</h1><ul><li>el contexto deberia tener:
+- que tipo de "persona artificial quiero que responda"
+- informaci&#xF3;n importante para desarrollar la tarea</li><li>detenerse a pensar en que es lo importante para el contexto</li><li>si no sabe del contexto, que la AI le ayude a construirlo:</li></ul><p class="promptContainer">
+<span class="contextColor remarkText">
+actuando como un experto en negocios internacionales entre latinoamerica y estados unidos en el sector de alimentos,</span>
+<span class="orderColor remarkText">
+que informacion necesita para ayudarme a crear una estrategia para lograr que mi negocio exporte frutas exoticas a estados unidos desde colombia,</span>
+</p><button id="promptcopyButtonB" class="copyTextBtn">Copiar texto</button>
+<script>
+    document.getElementById("promptcopyButtonB").addEventListener("click", function() {
+    var textToCopy = "actuando como un experto en negocios internacionales entre latinoamerica y estados unidos en el sector de alimentos, que informacion necesita para ayudarme a crear una estrategia para lograr que mi negocio exporte frutas exoticas a estados unidos desde colombia";
+
+    // Create a temporary input element
+    var tempInput = document.createElement("input");
+    tempInput.value = textToCopy;
+    document.body.appendChild(tempInput);
+
+    // Copy the text from the input element
+    tempInput.select();
+    document.execCommand("copy");
+
+    // Remove the temporary input element
+    document.body.removeChild(tempInput);
+
+    // Alert the user that the text has been copied
+    alert("Texto copiado: ");
+    });
+</script></div><div class="step step-level-1" step="7" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1" data-x="11200" data-y="0" data-z="0"><h1 id="trucos-orden">Trucos - orden</h1><ul><li>use verbos claros de manera imperativa</li><li>trate de usar t&#xE9;rminos t&#xE9;cnicos correctos</li><li>use palabras claves para evitar los indeterminados</li></ul><p class="promptContainer">
+<span class="contextColorSM remarkText">
+Actuando como un consultor de marketing con experiencia trabajando con instituciones educativas de ni&#241;os de basica primaria, </span>
+<span class="orderColorSM remarkText">
+escribe una lista de los 5 temas mas relevantes tenidos en cuenta por los padres de ni&#241;os de basica primaria al momento de elegir escuela,</span>
+<span class="modifierColorSM remarkText">
+para cada uno de los temas relevantes escribe un parrafo detallando la razon de la importancia del tema para los padres y que desean los padres encontrar en una escuela basica primaria sobre esos temas relevantes
+</span>
+</p><button id="promptcopyButtonC" class="copyTextBtn">Copiar texto</button>
+<script>
+    document.getElementById("promptcopyButtonC").addEventListener("click", function() {
+    var textToCopy = "Actuando como un consultor de marketing con experiencia trabajando con instituciones educativas de ni\u00f1os de basica primaria, escribe una lista de los 5 temas mas relevantes tenidos en cuenta por los padres de ni\u00f1os de basica primaria al momento de elegir escuela, para cada uno de los temas relevantes escribe un parrafo detallando la razon de la importancia del tema para los padres y que desean los padres encontrar en una escuela basica primaria sobre esos temas relevantes";
+
+    // Create a temporary input element
+    var tempInput = document.createElement("input");
+    tempInput.value = textToCopy;
+    document.body.appendChild(tempInput);
+
+    // Copy the text from the input element
+    tempInput.select();
+    document.execCommand("copy");
+
+    // Remove the temporary input element
+    document.body.removeChild(tempInput);
+
+    // Alert the user that the text has been copied
+    alert("Texto copiado: ");
+    });
+</script></div><div class="step step-level-1" step="8" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1" data-x="12800" data-y="0" data-z="0"><h1 id="trucos-modificadores">Trucos - modificadores</h1><ul><li>dependen mucho de las capacidades de la AI que estes usando</li><li>describe el enfoque de la tarea o su proposito</li></ul><p class="promptContainer">
+<span class="contextColor remarkText">
+actuando como un historiador experto en la historia de la economia, </span>
+<span class="orderColor remarkText">
+realiza una tabla sobre los 5 principales economistas de la corriente libertaria,</span>
+<span class="modifierColor remarkText">
+la tabla debe contener sus nombres, fecha de nacimiento, fecha de fallecimiento y el titulo de su libro mas representativo
+</span>
+</p><button id="promptcopyButtonE" class="copyTextBtn">Copiar texto</button>
+<script>
+    document.getElementById("promptcopyButtonE").addEventListener("click", function() {
+    var textToCopy = "actuando como un historiador experto en la historia de la economia, realiza una tabla sobre los 5 principales economistas de la corriente libertaria, la tabla debe contener sus nombres, fecha de nacimiento, fecha de fallecimiento y el titulo de su libro mas representativo";
+
+    // Create a temporary input element
+    var tempInput = document.createElement("input");
+    tempInput.value = textToCopy;
+    document.body.appendChild(tempInput);
+
+    // Copy the text from the input element
+    tempInput.select();
+    document.execCommand("copy");
+
+    // Remove the temporary input element
+    document.body.removeChild(tempInput);
+
+    // Alert the user that the text has been copied
+    alert("Texto copiado: ");
+    });
+</script></div><div class="step step-level-1" step="9" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1" data-x="14400" data-y="0" data-z="0"><h1 id="caso-estudio-diseno-de-marca">Caso estudio: Dise&#xF1;o de marca</h1><p><a href="https://namelix.com">Namelix</a></p><img src="qr/namelix.webp"></img></div><div class="step step-level-1" step="10" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1" data-x="16000" data-y="0" data-z="0"><h1 id="caso-estudio-pitch">Caso estudio: Pitch</h1><p class="promptContainer">
+<span class="contextColor remarkText">
+actuando como un consultor de negocios experto en emprendimientos de colombia, </span>
+<span class="orderColor remarkText">
+que informacion necesita de mi negocio para poder ayudarme a crear un pitch de 1 minuto</span>
+</p><button id="promptcopyButtonD" class="copyTextBtn">Copiar texto</button>
+<script>
+    document.getElementById("promptcopyButtonD").addEventListener("click", function() {
+    var textToCopy = "actuando como un consultor de negocios experto en emprendimientos de colombia, que informacion necesita de mi negocio para poder ayudarme a crear un pitch de 1 minuto";
+
+    // Create a temporary input element
+    var tempInput = document.createElement("input");
+    tempInput.value = textToCopy;
+    document.body.appendChild(tempInput);
+
+    // Copy the text from the input element
+    tempInput.select();
+    document.execCommand("copy");
+
+    // Remove the temporary input element
+    document.body.removeChild(tempInput);
+
+    // Alert the user that the text has been copied
+    alert("Texto copiado: ");
+    });
+</script></div><div class="step step-level-1" step="11" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1" data-x="17600" data-y="0" data-z="0"><h1 id="bonus-crea-imagenes">Bonus: Crea imagenes</h1><p><a href="https://www.craiyon.com/">Craiyon</a></p><img src="qr/craiyon.webp" width="200px"></img><div class="verticalCarrouselContainer">
+<img class='imgCarrousel' src="img/prompt_img.webp">
+<img class='imgCarrousel' src="img/result_prompt_img.webp">
+<img  src="img/detail_promt.webp">
+</div></div><div class="step step-level-1" step="12" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1" data-x="19200" data-y="0" data-z="0"><h1 id="bonus-crea-paginas-web">Bonus: Crea p&#xE1;ginas web</h1><p><a href="https://www.framer.com/">Framer</a></p><img src="qr/framer.webp"></img></div><div class="step step-level-1" step="13" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1" data-x="20800" data-y="0" data-z="0"><h1 id="bonus-redisena-tu-casa">Bonus: Redise&#xF1;a tu casa</h1><img src="img/redesign.webp" width="1000px"></img><p><a href="https://remodeled.ai/">Remodeled AI</a> --
+<a href="https://app.interiorideas.ai/">Interior ideas</a> --
+<a href="https://www.reimaginehome.ai">Reimagine home</a></p></div><div class="step step-level-1" step="14" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1" data-x="22400" data-y="0" data-z="0"><h1 id="notas-finales">Notas finales</h1><ul><li>las respuestas de la AI son inventadas, pueden ser falsas</li><li>las AI no tienen repetitividad asegurada</li><li>las AI tienen sesgos y es lo m&#xE1;s natural</li><li>la habilidad del humano pasa de hacer a calificar el trabajo de la AI</li><li>las AI se pueden hackear, cuidado con eso</li><li>hay debates &#xE9;ticos sobre a quien pertenece la propiedad intelectual de algo que hace una AI</li><li>usted puede estar filtrando datos de su empresa usando AI</li><li>trata de escribir prompts con un estilo similar al del internet</li></ul></div><div class="step step-level-1" step="15" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1" data-x="24000" data-y="0" data-z="0"><img src="img/office_thanks.webp" width="800px"></img></div></div><div class="footer"><div class='ftContainer'>
+<div class="ftBrand ftSpaced">
+    <img class="icoauthor" src="img/pedro.webp">
+    <div>Ing. Pedro Rivera </div>
+</div>
+<div class="ftSpaced"><a class="ftLink" href="https://co.linkedin.com/in/ppsirg" target="_blank" >LinkedIn</a> - <a href="https://github.com/ppsirg" target="_blank" class="ftLink">Github</a></div>
+<div class="ftSpaced">Liderazo Extraordinario Coomeva, 2023</div>
+</div></div><script type="text/javascript" src="js/impress.js"></script><script type="text/javascript" src="js/gotoSlide.js"></script><script type="text/javascript" src="js/hovercraft.js"></script></body></html>
